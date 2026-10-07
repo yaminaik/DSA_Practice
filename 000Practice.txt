@@ -1,0 +1,54 @@
+# ---------- LOOPS ----------
+for i in range(n):           # 0 to n-1
+for i in range(1, n + 1):    # 1 to n
+for i in range(n - 1, -1, -1):  # n-1 down to 0 (backwards)
+for x in nums:               # each value
+for i, x in enumerate(nums): # index + value together
+while left < right:          # when you don't know how many steps
+
+# ---------- LISTS ----------
+a = []                 # empty
+a = [0] * n            # n zeros
+a.append(x)            # add to end           O(1)
+a.pop()                # remove from end      O(1)
+a.pop(0)               # remove from front    O(n) -- slow!
+a[0], a[-1]            # first, last
+a[1:4]                 # slice: index 1,2,3
+a[::-1]                # reversed copy
+len(a), sum(a), max(a), min(a)
+a.sort()               # sorts in place
+sorted(a)              # returns a new sorted list
+x in a                 # search                O(n) -- slow for big lists
+
+# ---------- DICTS (hash map) ----------  ← most used in DSA
+d = {}
+d[key] = value                 # add / update     O(1)
+d.get(key, 0)                  # value, or 0 if missing
+key in d                       # check            O(1)
+d[x] = d.get(x, 0) + 1         # COUNT frequency  ← you'll write this 100 times
+for k, v in d.items():         # loop keys + values
+from collections import Counter
+Counter(nums)                  # frequency dict in one line
+
+# ---------- SETS ----------
+s = set()
+s.add(x)            # O(1)
+x in s              # O(1) ← much faster than list
+s.remove(x)
+set(nums)           # remove duplicates
+
+# ---------- STRINGS ----------
+for ch in s:              # each character
+s[::-1]                   # reverse
+s.split(" ")              # "a b" -> ["a","b"]
+"".join(list_of_chars)    # ["a","b"] -> "ab"
+s.replace(".", "[.]")     # replace all
+s.isdigit(), s.isalpha(), s.lower()
+# strings can't be changed in place -> build a list, then "".join()
+
+# ---------- STACK / QUEUE / HEAP (later weeks) ----------
+stack = []; stack.append(x); stack.pop()       # stack = plain list
+from collections import deque
+q = deque(); q.append(x); q.popleft()          # queue  O(1)
+import heapq
+heapq.heappush(h, x); heapq.heappop(h)         # min-heap
