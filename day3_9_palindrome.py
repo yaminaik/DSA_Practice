@@ -8,8 +8,9 @@ class Solution:
                 return True
             else:
                 return False
-    
 
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
 
 # 9. Palindrome Number

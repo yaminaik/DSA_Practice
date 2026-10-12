@@ -11,6 +11,8 @@ class Solution:
             
         return steps
 
+# Time Complexity: O(log n)
+# Space Complexity: O(1)
 
 # 1342. Number of Steps to Reduce a Number to Zero
 # Solved

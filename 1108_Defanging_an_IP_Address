@@ -8,7 +8,8 @@ class Solution:
                 result.append(ch)
         return "".join(result)
 
-
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 
 # if need to do in same addresss 
 class Solution:
