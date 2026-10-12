@@ -15,6 +15,10 @@ class Solution:
             results.append(nums[i])
             results.append(nums[i+n])
         return results
+
+# Time Complexity: O(n)
+# Space Complexity: O(n)
+
 # 1470. Shuffle the Array
 # Solved
 

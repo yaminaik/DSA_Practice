@@ -20,7 +20,8 @@ class Solution:
     def maximumWealth(self, accounts: list[list[int]]) -> int:
         return max(sum(row) for row in accounts)
 
-        
+# Time Complexity: O(m*n) where m is the number of customers and n is the number of banks.
+# Space Complexity: O(m) where m is the number of customers.     
 
 # 1672. Richest Customer Wealth
 # Easy
