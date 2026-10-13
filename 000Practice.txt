@@ -52,3 +52,18 @@ from collections import deque
 q = deque(); q.append(x); q.popleft()          # queue  O(1)
 import heapq
 heapq.heappush(h, x); heapq.heappop(h)         # min-heap
+
+
+# ---------- Js vs Python---------
+Idea	         Python	        JavaScript
+Print	         print(x)	    console.log(x)
+Variable	     x = 5	        let x = 5; / const x = 5;
+Naming	         snake_case	    camelCase
+True / False	 True, False	true, false
+Nothing	None	 null,           undefined
+And / or / not   and, or, not	 &&, ||, !
+Else-if	         elif	         else if
+Integer division	//	         Math.floor(a / b)
+Equality	      ==	          ===
+String formatting	f"{x}"	        `${x}`
+Comment	            # text	// text
