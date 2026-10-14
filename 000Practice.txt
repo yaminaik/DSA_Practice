@@ -66,4 +66,11 @@ Else-if	         elif	         else if
 Integer division	//	         Math.floor(a / b)
 Equality	      ==	          ===
 String formatting	f"{x}"	        `${x}`
-Comment	            # text	// text
+Comment	            # text	       // text
+
+Dict                d["name"]       person.name or person["name"]
+                    "name" in d     "name" in person
+                    d.get("x", 0)   person.x ?? 0
+                    d.keys(),       Object.keys(person), Object.values(person), Object.entries(person)
+                    d.values(), 
+                    d.items()
